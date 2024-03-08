@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Landing_bg from '../../../assets/images/Landing-bg.png'
 import Logo from '../../../assets/images/SVG/Logo.svg'
-import DateandVenue from '../../../assets/images/SVG/DateandVenue.svg'
-import Days from '../../../assets/images/SVG/days.svg'
+import DateandVenue from '../../../assets/images/1x/DateandVenue.png'
+import Days from '../../../assets/images/1x/days.png'
 import round from '../../../assets/images/1x/Asset 5.png'
 
 import ButtonBG from '../../../assets/images/1x/Asset 4.png'
@@ -61,9 +61,9 @@ function Landing() {
                 </ul>
             </div>
             <Image src={Landing_bg} width={1920} height={1080} alt="bg " className={'hidden xl:inline'} />
-            <span className={'xl:hidden absolute top-0 z-0'}>
-                <Image src={HMF} width={1080} height={2200} alt="bg " className={' '} />
-                <Image src={HMF} width={1080} height={2200} alt="bg " className={' '} />
+            <span className={'xl:hidden absolute top-0 z-0 '}>
+                <Image src={HMF} width={1080} height={1920} alt="bg " className={' object-contain'} />
+                <Image src={HMF} width={1080} height={1920} alt="bg " className={' object-contain'} />
             </span>
 
 
@@ -109,8 +109,8 @@ function Landing() {
                                 <p className={'text-black xl:text-[300px] text-[250px]'}>
                                     {timeLeft.days}
                                 </p>
-                                <Image src={Days} width={150} height={100} alt='' className={'-translate-y-6 hidden xl:inline'} />
-                                <Image src={Days} width={130} height={100} alt='' className={'-translate-y-6  -translate-x-6 xl:hidden'} />
+                                <Image src={Days} width={150} height={100} alt='' className={'-translate-y-6 object-contain hidden xl:inline'} />
+                                <Image src={Days} width={130} height={100} alt='' className={'-translate-y-6 object-contain  -translate-x-6 xl:hidden'} />
                             </span>
                         </div>
                     </div>

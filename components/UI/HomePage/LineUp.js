@@ -20,7 +20,7 @@ function LineUp() {
                             <p className={'text-[200px] xl:text-[250px]'}>Line</p>
                             <p className={'text-[200px] xl:text-[250px] absolute top-0 text-red -translate-y-4 -translate-x-4'} >Line</p>
                             <p className={'text-[200px] xl:text-[250px]  xl:-translate-y-32 -translate-y-24'} >UP</p>
-                            <p className={'text-[200px] xl:text-[250px] absolute top-[31%] text-red -translate-y-4 -translate-x-4'} >UP</p>
+                            <p className={'text-[200px] xl:text-[250px] absolute top-[31%] text-red -translate-y-0 -translate-x-4'} >UP</p>
                             <div className={'hidden xl:inline'}>
                                 <button className={'relative -translate-y-64 xl:-translate-y-36 tra  flex items-center justify-center'}>
                                     <Image src={ButtonBG} width={150} height={60} alt={''} />
@@ -37,7 +37,7 @@ function LineUp() {
             </div>
             <Image src={bar} width={1920} height={200} className={'-translate-y-6 rotate-180'} />
             <Image src={A2} width={150} height={200} className={'-translate-y-6 rotate-180 absolute bottom-[5%] xl:bottom-[13%] right-[10%] xl:right-[7%] animate-spin-slow'} />
-            <Image src={A3} width={150} height={200} className={'-translate-y-6 rotate-180 absolute xl:top-[60%] xl:left-[35%] top-[30%]  right-10 '} />
+            <Image src={A3} width={150} height={200} className={'-translate-y-6 rotate-180 absolute xl:top-[60%] xl:left-[35%] top-[30%]  right-0 '} />
         </div>
     )
 }
