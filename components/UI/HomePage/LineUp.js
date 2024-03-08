@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import bar from '../../../assets/images/1x/bar.png'
 import A2 from '../../../assets/images/1x/A2.png'
-import A3 from '../../../assets/images/1x/A3.png'
+import A3 from '../../../assets/images/1x/a3.png'
 
 
 import Artist from './Artist'
