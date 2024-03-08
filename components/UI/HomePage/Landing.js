@@ -64,7 +64,7 @@ function Landing() {
             </span>
 
 
-            <div className={'absolute xl:left-[10%] 2xl:left-[18%] px-8  2xl:top-[25%] 2xl:space-x-16 xl:top-[15%] xl:px-16  grid xl:grid-cols-2 grid-rows-2 grid-flow-col xl:space-x-20 xl:grid-flow-row'}>
+            <div className={'absolute xl:left-[10%]  2xl:left-[18%] px-8  2xl:top-[25%] 2xl:space-x-16 xl:top-[15%] xl:px-16  grid xl:grid-cols-2 grid-rows-2 grid-flow-col xl:space-x-20 xl:grid-flow-row'}>
                 <div className={' space-y-12 pt-12 '}>
                     <Image src={Logo} width={400} height={500} alt={'Logo'} />
                     <Image src={DateandVenue} width={400} height={500} alt={''} />
