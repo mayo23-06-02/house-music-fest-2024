@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.77 242.31">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: 'Bold_Vibes-Regular-Yandi_De-90ms-RKSJ-H', 'Bold Vibes';
+        font-size: 151.84px;
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        fill: #901200;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-1" transform="translate(25.36 5.3) rotate(90)"><tspan x="0" y="0">days</tspan></text>
+      <text class="cls-2" transform="translate(34.19) rotate(90)"><tspan x="0" y="0">days</tspan></text>
+    </g>
+  </g>
+</svg>

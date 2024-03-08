@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'Platelet';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/Platelet.otf') format('otf');
+}
+
+
+@layer components {
+  /* Home */
+  .home {
+   @apply text-xl flex items-center justify-center   bg-secondary 
+  }
+  .home-main {
+    @apply h-full  flex max-w-7xl w-full
+  }
+  .home-container {
+    
+    @apply w-full flex bg-secondary flex-col space-y-16
+  }
+  /* Header */
+  .header-container{
+    @apply  flex w-full px-4 justify-between lg:py-6 items-center
+}
+  .navigation-list {
+    @apply flex bg-gray3  cursor-pointer rounded
+  }
+  .navigation-item {
+    @apply text-2xl text-text_primary relative flex items-center hover:underline px-6 py-2
+  }
+  .navigation-item-active { 
+    @apply text-2xl text-secondary relative bg-primary px-6 py-2
+  }
+  .navigation-item-active-left  {
+    @apply text-2xl cursor-pointer relative rounded-l flex items-center bg-primary px-6 py-2 text-secondary
+  }
+  .outer-dot {
+    @apply bg-secondary border-2 h-3 w-3 flex  items-center justify-center rounded-full  border-text_primary absolute -right-1 z-50
+  }
+  .inner-dot {
+    @apply bg-text_primary border-2 border-secondary h-full w-full  rounded-full
+  }
+  .background-container {
+    @apply absolute -top-10 -z-0 hidden lg:inline
+  }
+  .landing-container {
+    @apply  grid-cols-2 lg:grid px-4 lg:px-0 space-y-0  lg:grid-flow-row flex   flex-col-reverse
+  }
+  .landing-left-section {
+    @apply lg:space-y-12 lg:pt-20
+  }
+  .landing-text-container {
+    @apply  space-y-3 lg:space-y-6 w-full  
+  }
+  .landing-title {
+    @apply font-black lg:-space-y-4 text-3xl lg:text-5xl whitespace-nowrap flex justify-center flex-col lg:items-start  items-center 
+  }
+  .landing-subtitle {
+    @apply  lg:w-9/12 opacity-70 text-center lg:text-start text-lg
+  }
+  .landing-button {
+    @apply  h-12 items-center space-x-12 px-14 flex bg-gray2 rounded-md  absolute hover:bg-gray3
+  }
+  .landing-play {
+    @apply  hover:text-black h-full w-12   bg-primary flex items-center justify-center text-secondary rounded-l-md hover:bg-gray3
+  }
+  
+}
