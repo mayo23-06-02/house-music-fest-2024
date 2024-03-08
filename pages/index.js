@@ -15,7 +15,7 @@ const poppins = localFont({
 export default function Home() {
   return (
     <main
-      className={`bg-primary px-6 xl:px-0  2xl:px-24  2xl:py-36 h-full w-screen ${bold_vibes.className} `}
+      className={`bg-primary xl:bg-black px-6 xl:px-0  2xl:px-24  2xl:py-36 h-full w-screen ${bold_vibes.className} `}
     >
       <div className=' flex items-center flex-col w-full '>
         <HomeMain />

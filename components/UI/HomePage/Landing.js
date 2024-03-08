@@ -15,7 +15,6 @@ function Landing() {
     const calculateTimeLeft = () => {
         const difference = new Date(targetDate) - new Date();
         let timeLeft = {};
-
         if (difference > 0) {
             timeLeft = {
                 days: Math.ceil(difference / (1000 * 60 * 60 * 24)), // Use Math.ceil instead of Math.floor
@@ -24,12 +23,10 @@ function Landing() {
                 seconds: Math.floor((difference / 1000) % 60)
             };
         }
-
         return timeLeft;
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
     useEffect(() => {
         const timer = setTimeout(() => {
             setTimeLeft(calculateTimeLeft());
@@ -102,12 +99,13 @@ function Landing() {
                     </div>
                     <div className={"pt-16 xl:pt-0"}>
                         <div className={'relative grid grid-flow-row grid-cols-2 -translate-y-12 '}>
-                            <p className={'text-white absolute w-9   z-10 top-0 text- xl:text-[300px] text-[250px]'}>
-                                {timeLeft.days}
-                            </p>
+                        <p className={'text-white absolute w-9   z-10 top-0 text- xl:text-[300px] text-[250px]'}>
+                        {typeof window !== 'undefined' && timeLeft.days}
+                    </p>
                             <span className={'absolute flex justify-center  top-0 translate-y-3 translate-x-3'}>
                                 <p className={'text-black xl:text-[300px] text-[250px]'}>
-                                    {timeLeft.days}
+                                {typeof window !== 'undefined' && timeLeft.days}
+
                                 </p>
                                 <Image src={Days} width={150} height={100} alt='' className={'-translate-y-6 object-contain hidden xl:inline'} />
                                 <Image src={Days} width={130} height={100} alt='' className={'-translate-y-6 object-contain  -translate-x-6 xl:hidden'} />
@@ -120,15 +118,15 @@ function Landing() {
                             <Image src={ButtonBG} width={360} height={100} alt={'bg'} className={'xl:hidden '} />
                             <div className={'absolute w-full justify-center xl:top-[25%] top-[25%] px-6 flex space-x-4 xl:space-x-6'}>
                                 <div className={'flex space-x-1  items-end'}>
-                                    <p className={'text-white text-2xl xl:text-4xl'}>{timeLeft.hours}</p>
+                                    <p className={'text-white text-2xl xl:text-4xl'}>{typeof window !== 'undefined' && timeLeft.hours}</p>
                                     <p className={'text-red text-xl xl:text-2xl'}>hours</p>
                                 </div>
                                 <div className={'flex space-x-1  items-end'}>
-                                    <p className={'text-white text-2xl xl:text-4xl'}>{timeLeft.minutes}</p>
+                                    <p className={'text-white text-2xl xl:text-4xl'}>{typeof window !== 'undefined' && timeLeft.minutes}</p>
                                     <p className={'text-red text-xl xl:text-2xl'}>minutes</p>
                                 </div>
                                 <div className={'flex space-x-1  items-end'}>
-                                    <p className={'text-white text-2xl xl:text-4xl'}>{timeLeft.seconds}</p>
+                                    <p className={'text-white text-2xl xl:text-4xl'}>{typeof window !== 'undefined' && timeLeft.seconds}</p>
                                     <p className={'text-red text-xl xl:text-2xl'}>seconds</p>
                                 </div>
                             </div>
