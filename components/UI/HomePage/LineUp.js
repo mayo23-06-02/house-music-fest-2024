@@ -13,7 +13,7 @@ function LineUp() {
     return (
         <div className={'relative '}>
             <Image src={bar} width={1920} height={200} className={'-translate-y-6'} />
-            <div className={'w-full grid pt-8 xl:max-h-[800px]  h-full max-h-[1000px]  grid-rows-2 xl:grid-cols-2 xl:grid-flow-row grid-flow-col'}>
+            <div className={'w-full grid pt-8 xl:max-h-[800px]  h-full max-h-[1000px] md:max-h-[600px]  grid-rows-2 md:grid-cols-2 md:grid-flow-row grid-flow-col'}>
                 <div className={'px-6 xl:pl-24 pt-'}>
                     <div className={'w-full flex flex-col items-center justify-center'}>
                         <div className={'relative '}>
@@ -22,7 +22,7 @@ function LineUp() {
                             <p className={'text-[200px] xl:text-[250px]  xl:-translate-y-32 -translate-y-24'} >UP</p>
                             <p className={'text-[200px] xl:text-[250px] absolute top-[31%] text-red -translate-y-0 -translate-x-4'} >UP</p>
                             <div className={'hidden xl:inline'}>
-                                <button className={'relative -translate-y-64 xl:-translate-y-36 tra  flex items-center justify-center'}>
+                                <button className={'relative -translate-y-64 md:-translate-x-16 xl:-translate-y-36 tra  flex items-center justify-center'}>
                                     <Image src={ButtonBG} width={150} height={60} alt={''} />
                                     <p className={'text-white absolute text-2xl pt-1  hover:text-red hover:scale-105'}>View All Acts</p>
                                 </button>
@@ -31,7 +31,7 @@ function LineUp() {
 
                     </div>
                 </div>
-                <div className={'max-w-2xl xl:translate-y-32 -translate-y-16 flex items-center justify-center'}>
+                <div className={'max-w-2xl xl:translate-y-32 md:translate-y-16 -translate-y-16 flex items-center justify-center'}>
                     <Artist />
                 </div>
             </div>

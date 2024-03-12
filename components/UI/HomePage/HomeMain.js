@@ -7,7 +7,7 @@ import Contact from './Contact'
 
 function HomeMain() {
   return (
-    <div className= {' w-full h-full max-w-[1920px] bg-primary'}>
+    <div className= {' w-full h-full xl:max-w-[1920px] bg-primary'}>
         <Landing />
         <About />
         <LineUp />

@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function Contact() {
     return (
-        <div className={'xl:pb-24 pb-8 '} >
+        <div id='contact' className={'xl:pb-24 pb-8 '} >
             <Image src={bar} width={1920} height={200} className={'-translate-y-10'} />
             <div className={'flex flex-col xl:flex-row justify-between space-x-12 xl:px-24 px-6'}>
                 <div className={' w-full space-y-12'}>
@@ -20,22 +20,18 @@ export default function Contact() {
                             <p className={'text-red text-4xl xl:text-6xl '}>Phone</p>
                             <div className={'space-y-2 '}>
                                 <div className={'flex items-end'}>
-                                    <p className={'text-black text-2xl xl:text-4xl'}>+268 7800 000</p>
+                                    <p className={'text-black text-2xl xl:text-4xl'}>+268 7613 0223</p>
                                 </div>
-                                <div className={'flex items-end'}>
-                                    <p className={'text-black text-2xl xl:text-4xl'}>+268 7800 000</p>
-                                </div>
+                                
                             </div>
                         </div>
                         <div className={'space-y-6'}>
                             <p className={'text-red text-4xl xl:text-6xl '}>Email</p>
                             <div className={'space-y-2 '}>
                                 <div className={'flex items-end'}>
-                                    <p className={'text-black text-2xl xl:text-4xl'}>info@hmf2024.com</p>
+                                    <p className={'text-black text-2xl xl:text-4xl'}>swaziboyent@gmail.com</p>
                                 </div>
-                                <div className={'flex items-end'}>
-                                    <p className={'text-black text-2xl xl:text-4xl'}>housemusicfest@hmf2024.com</p>
-                                </div>
+                             
                             </div>
                         </div>
                     </div>
@@ -46,18 +42,13 @@ export default function Contact() {
                     <div>
                         <ul className={'flex justify-center items-center xl:space-x-0 space-x-6 xl:flex-col text-4xl'}>
 
-                            <Link href={'instagram.com'}>
+                            <Link href={'instagram.https://www.instagram.com/house_musiq_fest?igsh=ZWdiZDhhZDFtenFj'}>
                                 <li><p className={''}><BiLogoInstagram /></p></li>
                             </Link>
-                            <Link href={'facebook.com'}>
+                            <Link href={'https://www.facebook.com/housemusiqfest'}>
                                 <li><p className={''}><BiLogoFacebook /></p></li>
                             </Link>
-                            <Link href={'twitter.com'}>
-                                <li><p className={''}><BiLogoTwitter /></p></li>
-                            </Link>
-                            <Link href={'tiktok.com'}>
-                                <li><p className={''}><BiLogoTiktok /></p></li>
-                            </Link>
+                           
                         </ul>
                     </div>
                 </div>

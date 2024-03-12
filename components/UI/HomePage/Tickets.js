@@ -1,6 +1,6 @@
 import React from 'react'
 import A5 from '../../../assets/images/1x/bc.png'
-import A from '../../../assets/images/1x/p.png'
+import A from '../../../assets/images/1x/v.png'
 
 import Image from 'next/image'
 
